@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url(Image/9895779_8856.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  #quote-generator {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  #quote-display {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote-text {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #444;
+  }
+
+  .quote-author {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  #quote-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #quote-controls select,
+  #quote-controls button {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+
+  #generate-quote {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+  }
+  
+  #generate-quote:hover {
+    background-color: #45A049;
+  }
+  
+  #quote-category,
+  #quote-count {
+    background-color: #f9f9f9;
+  }
+  
+  button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+  
+  .action-button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+  }
+
+  .action-button:hover {
+    background-color: #45A049;
+  }
+
+  .copy-text {
+    font-size: 16px;
+  }
+  
+  .download-text {
+    font-size: 16px;
+  }
+
+  #about-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  #about-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #about-section p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  #quote-submission {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  #quote-submission h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #quote-submission textarea,
+  #quote-submission input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+  }
+  
+  #quote-submission button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #quote-submission button:hover {
+    background-color: #45A049;
+  }
+
+.dropdown-group {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-group label {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px; 
+}
+
+.dropdown-group select {
+  flex: 2;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #4CAF50;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}

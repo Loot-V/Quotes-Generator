@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Quote Generator</title>
+</head>
+<body>
+
+  <div id="quote-generator">
+    
+    <header class="header">
+      <h1>Random Quote Generator</h1>
+    </header>
+
+    <div id="quote-display">
+      <p id="quote-text">"Welcome to the Random Quote Generator."</p>
+      <p id="quote-author">- Author</p>
+    </div>
+
+    <div id="quote-controls">
+      <button id="generate-quote" onclick="generateQuote()">Generate New Quote</button>
+
+      <div class="dropdown-group">
+        <label for="quote-category">Category:</label>
+        <select id="quote-category">
+            <option value="all">All</option>
+            <option value="inspirational">Inspirational</option>
+            <option value="love">Love</option>
+            <option value="wisdom">Wisdom</option>
+            <option value="comedy">Comedy</option>
+        </select>
+    </div>
+    
+    <div class="dropdown-group">
+        <label for="quote-count">Number of quotes:</label>
+        <select id="quote-count">
+            <option value="1">1 Quote</option>
+            <option value="2">2 Quotes</option>
+            <option value="3">3 Quotes</option>
+            <option value="4">4 Quotes</option>
+            <option value="5">5 Quotes</option>
+        </select>
+    </div> 
+
+    <div class="quote-actions">
+      <button id="copy-quote" class="action-button" onclick="copyQuotes()">
+        <img src="/Image/—Pngtree—vector copy icon_4015607.png" alt="Copy Quote"/>
+        <span id="copy-text">Copy Quote</span>
+      </button>
+      <button id="download-quote" class="action-button" onclick="downloadQuotes()">
+        <img src="/Image/—Pngtree—file download icon_4647924.png" alt="Download Quote"/>
+        <span id="download-text">Download Quote</span>
+      </button>
+    </div>
+
+    <div id="about-section">
+      <h3>About This Website</h3>
+      <p>This website is a random quote generator. Choose a category, select how many quotes you want, and click generate to enjoy inspirational, funny, or wise quotes. You can also copy or download your favorite quotes!</p>
+      <p>How to use: Select your options, generate your quotes, then copy or download them if you like.</p>
+    </div>
+
+    <div id="quote-submission">
+      <h4>Contribute Your Quote</h4>
+      <form id="submission-form">
+        <textarea id="user-quote" placeholder="Enter your quote" required></textarea>
+        <input type="text" id="user-name" placeholder="Your Name or Username" required>
+        <button type="submit">Submit Quote</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
